@@ -270,6 +270,17 @@
 	<x:Double x:Key="MD3.Typography.Label.Medium.Size">12</x:Double>
 	<x:Double x:Key="MD3.Typography.Label.Small.Size">11</x:Double>
 
+	<!--  Material Design 3 Opacity Values for State Layers  -->
+	<x:Double x:Key="MD3.StateLayer.Hover.Opacity">0.08</x:Double>
+	<x:Double x:Key="MD3.StateLayer.Focus.Opacity">0.12</x:Double>
+	<x:Double x:Key="MD3.StateLayer.Pressed.Opacity">0.12</x:Double>
+	<x:Double x:Key="MD3.StateLayer.Dragged.Opacity">0.16</x:Double>
+	
+	<!--  Material Design 3 Opacity Values for Components  -->
+	<x:Double x:Key="MD3.Component.Hover.Opacity">0.92</x:Double>
+	<x:Double x:Key="MD3.Component.Pressed.Opacity">0.88</x:Double>
+	<x:Double x:Key="MD3.Component.Disabled.Opacity">0.38</x:Double>
+
 	<!--  Material Design 3 Shape Scale  -->
 	<!--  Corner Radius - Material Design 3 uses more rounded corners  -->
 	<CornerRadius x:Key="MD3.Shape.CornerRadius.None">0</CornerRadius>
@@ -281,10 +292,10 @@
 	<CornerRadius x:Key="MD3.Shape.CornerRadius.Full">999</CornerRadius>
 
 	<!--  Override default WinUI corner radius with Material Design 3 values  -->
-	<CornerRadius x:Key="ControlCornerRadius">12</CornerRadius>
-	<CornerRadius x:Key="OverlayCornerRadius">12</CornerRadius>
-	<CornerRadius x:Key="GridViewThumbnailCornerRadius">12</CornerRadius>
-	<CornerRadius x:Key="DetailsLayoutThumbnailCornerRadius">8</CornerRadius>
+	<CornerRadius x:Key="ControlCornerRadius">{StaticResource MD3.Shape.CornerRadius.Medium}</CornerRadius>
+	<CornerRadius x:Key="OverlayCornerRadius">{StaticResource MD3.Shape.CornerRadius.Medium}</CornerRadius>
+	<CornerRadius x:Key="GridViewThumbnailCornerRadius">{StaticResource MD3.Shape.CornerRadius.Medium}</CornerRadius>
+	<CornerRadius x:Key="DetailsLayoutThumbnailCornerRadius">{StaticResource MD3.Shape.CornerRadius.Small}</CornerRadius>
 
 	<!--  Material Design 3 Elevation (Shadow depth)  -->
 	<x:Double x:Key="MD3.Elevation.Level0">0</x:Double>
@@ -293,8 +304,5 @@
 	<x:Double x:Key="MD3.Elevation.Level3">6</x:Double>
 	<x:Double x:Key="MD3.Elevation.Level4">8</x:Double>
 	<x:Double x:Key="MD3.Elevation.Level5">12</x:Double>
-
-	<!--  Override tab shadow depth  -->
-	<x:Double x:Key="TabViewShadowDepth">0</x:Double>
 
 </ResourceDictionary>

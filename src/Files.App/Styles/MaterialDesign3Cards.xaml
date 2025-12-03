@@ -17,8 +17,7 @@
 		<Setter Property="BorderThickness" Value="0" />
 		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Medium}" />
 		<Setter Property="Padding" Value="16" />
-		<!--  Note: WinUI 3 doesn't have built-in shadow/elevation support like Material Design  -->
-		<!--  We use a subtle border to simulate elevation  -->
+		<!--  Note: WinUI 3 doesn't have built-in shadow/elevation like Material Design, so we use solid surface color  -->
 	</Style>
 
 	<!--  Material Design 3 Outlined Card Style  -->

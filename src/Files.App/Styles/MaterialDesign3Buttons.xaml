@@ -41,18 +41,18 @@
 								<VisualState x:Name="Normal" />
 								<VisualState x:Name="PointerOver">
 									<VisualState.Setters>
-										<Setter Target="Background.Opacity" Value="0.92" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Hover.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Pressed">
 									<VisualState.Setters>
-										<Setter Target="Background.Opacity" Value="0.88" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Pressed.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Disabled">
 									<VisualState.Setters>
-										<Setter Target="Background.Opacity" Value="0.38" />
-										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
+										<Setter Target="ContentPresenter.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>
@@ -103,18 +103,18 @@
 								<VisualState x:Name="Normal" />
 								<VisualState x:Name="PointerOver">
 									<VisualState.Setters>
-										<Setter Target="Background.Opacity" Value="0.92" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Hover.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Pressed">
 									<VisualState.Setters>
-										<Setter Target="Background.Opacity" Value="0.88" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Pressed.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 								<VisualState x:Name="Disabled">
 									<VisualState.Setters>
-										<Setter Target="Background.Opacity" Value="0.38" />
-										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
+										<Setter Target="ContentPresenter.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>
@@ -176,8 +176,8 @@
 								<VisualState x:Name="Disabled">
 									<VisualState.Setters>
 										<Setter Target="Background.BorderBrush" Value="{ThemeResource MD3.OutlineBrush}" />
-										<Setter Target="Background.Opacity" Value="0.38" />
-										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+										<Setter Target="Background.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
+										<Setter Target="ContentPresenter.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>
@@ -238,7 +238,7 @@
 								</VisualState>
 								<VisualState x:Name="Disabled">
 									<VisualState.Setters>
-										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+										<Setter Target="ContentPresenter.Opacity" Value="{StaticResource MD3.Component.Disabled.Opacity}" />
 									</VisualState.Setters>
 								</VisualState>
 							</VisualStateGroup>

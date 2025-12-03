@@ -1,0 +1,252 @@
+<!--  Copyright (c) Files Community. Licensed under the MIT License.  -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<!--  Material Design 3 Filled Button Style  -->
+	<Style x:Key="MD3FilledButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="{ThemeResource MD3.PrimaryBrush}" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnPrimaryBrush}" />
+		<Setter Property="BorderBrush" Value="Transparent" />
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="Padding" Value="24,10,24,10" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="Medium" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Label.Large.Size}" />
+		<Setter Property="UseSystemFocusVisuals" Value="True" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Large}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid x:Name="RootGrid" Background="Transparent">
+						<Border
+							x:Name="Background"
+							Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							CornerRadius="{TemplateBinding CornerRadius}">
+							<ContentPresenter
+								x:Name="ContentPresenter"
+								Padding="{TemplateBinding Padding}"
+								HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+								VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+								AutomationProperties.AccessibilityView="Raw"
+								Content="{TemplateBinding Content}"
+								ContentTemplate="{TemplateBinding ContentTemplate}"
+								ContentTransitions="{TemplateBinding ContentTransitions}"
+								Foreground="{TemplateBinding Foreground}" />
+						</Border>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<VisualState.Setters>
+										<Setter Target="Background.Opacity" Value="0.92" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<VisualState.Setters>
+										<Setter Target="Background.Opacity" Value="0.88" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<VisualState.Setters>
+										<Setter Target="Background.Opacity" Value="0.38" />
+										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+									</VisualState.Setters>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!--  Material Design 3 Filled Tonal Button Style  -->
+	<Style x:Key="MD3FilledTonalButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="{ThemeResource MD3.SecondaryContainerBrush}" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSecondaryContainerBrush}" />
+		<Setter Property="BorderBrush" Value="Transparent" />
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="Padding" Value="24,10,24,10" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="Medium" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Label.Large.Size}" />
+		<Setter Property="UseSystemFocusVisuals" Value="True" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Large}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid x:Name="RootGrid" Background="Transparent">
+						<Border
+							x:Name="Background"
+							Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							CornerRadius="{TemplateBinding CornerRadius}">
+							<ContentPresenter
+								x:Name="ContentPresenter"
+								Padding="{TemplateBinding Padding}"
+								HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+								VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+								AutomationProperties.AccessibilityView="Raw"
+								Content="{TemplateBinding Content}"
+								ContentTemplate="{TemplateBinding ContentTemplate}"
+								ContentTransitions="{TemplateBinding ContentTransitions}"
+								Foreground="{TemplateBinding Foreground}" />
+						</Border>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<VisualState.Setters>
+										<Setter Target="Background.Opacity" Value="0.92" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<VisualState.Setters>
+										<Setter Target="Background.Opacity" Value="0.88" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<VisualState.Setters>
+										<Setter Target="Background.Opacity" Value="0.38" />
+										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+									</VisualState.Setters>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!--  Material Design 3 Outlined Button Style  -->
+	<Style x:Key="MD3OutlinedButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="Transparent" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.PrimaryBrush}" />
+		<Setter Property="BorderBrush" Value="{ThemeResource MD3.OutlineBrush}" />
+		<Setter Property="BorderThickness" Value="1" />
+		<Setter Property="Padding" Value="24,10,24,10" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="Medium" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Label.Large.Size}" />
+		<Setter Property="UseSystemFocusVisuals" Value="True" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Large}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid x:Name="RootGrid" Background="Transparent">
+						<Border
+							x:Name="Background"
+							Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							CornerRadius="{TemplateBinding CornerRadius}">
+							<ContentPresenter
+								x:Name="ContentPresenter"
+								Padding="{TemplateBinding Padding}"
+								HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+								VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+								AutomationProperties.AccessibilityView="Raw"
+								Content="{TemplateBinding Content}"
+								ContentTemplate="{TemplateBinding ContentTemplate}"
+								ContentTransitions="{TemplateBinding ContentTransitions}"
+								Foreground="{TemplateBinding Foreground}" />
+						</Border>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<VisualState.Setters>
+										<Setter Target="Background.Background" Value="{ThemeResource MD3.Primary.StateLayer.Hover}" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<VisualState.Setters>
+										<Setter Target="Background.Background" Value="{ThemeResource MD3.Primary.StateLayer.Pressed}" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<VisualState.Setters>
+										<Setter Target="Background.BorderBrush" Value="{ThemeResource MD3.OutlineBrush}" />
+										<Setter Target="Background.Opacity" Value="0.38" />
+										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+									</VisualState.Setters>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+	<!--  Material Design 3 Text Button Style  -->
+	<Style x:Key="MD3TextButtonStyle" TargetType="Button">
+		<Setter Property="Background" Value="Transparent" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.PrimaryBrush}" />
+		<Setter Property="BorderBrush" Value="Transparent" />
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="Padding" Value="12,10,12,10" />
+		<Setter Property="HorizontalAlignment" Value="Left" />
+		<Setter Property="VerticalAlignment" Value="Center" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontWeight" Value="Medium" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Label.Large.Size}" />
+		<Setter Property="UseSystemFocusVisuals" Value="True" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Large}" />
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate TargetType="Button">
+					<Grid x:Name="RootGrid" Background="Transparent">
+						<Border
+							x:Name="Background"
+							Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							CornerRadius="{TemplateBinding CornerRadius}">
+							<ContentPresenter
+								x:Name="ContentPresenter"
+								Padding="{TemplateBinding Padding}"
+								HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+								VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}"
+								AutomationProperties.AccessibilityView="Raw"
+								Content="{TemplateBinding Content}"
+								ContentTemplate="{TemplateBinding ContentTemplate}"
+								ContentTransitions="{TemplateBinding ContentTransitions}"
+								Foreground="{TemplateBinding Foreground}" />
+						</Border>
+						<VisualStateManager.VisualStateGroups>
+							<VisualStateGroup x:Name="CommonStates">
+								<VisualState x:Name="Normal" />
+								<VisualState x:Name="PointerOver">
+									<VisualState.Setters>
+										<Setter Target="Background.Background" Value="{ThemeResource MD3.Primary.StateLayer.Hover}" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Pressed">
+									<VisualState.Setters>
+										<Setter Target="Background.Background" Value="{ThemeResource MD3.Primary.StateLayer.Pressed}" />
+									</VisualState.Setters>
+								</VisualState>
+								<VisualState x:Name="Disabled">
+									<VisualState.Setters>
+										<Setter Target="ContentPresenter.Opacity" Value="0.38" />
+									</VisualState.Setters>
+								</VisualState>
+							</VisualStateGroup>
+						</VisualStateManager.VisualStateGroups>
+					</Grid>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+
+</ResourceDictionary>

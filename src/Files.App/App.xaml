@@ -53,6 +53,8 @@
 				<!--  Material Design 3 Theme  -->
 				<ResourceDictionary Source="ms-appx:///Styles/MaterialDesign3.xaml" />
 				<ResourceDictionary Source="ms-appx:///Styles/MaterialDesign3Buttons.xaml" />
+				<ResourceDictionary Source="ms-appx:///Styles/MaterialDesign3Cards.xaml" />
+				<ResourceDictionary Source="ms-appx:///Styles/MaterialDesign3Controls.xaml" />
 
 				<!--  Styles for the custom icons  -->
 				<ResourceDictionary Source="ms-appx:///Styles/PathIcons.xaml" />

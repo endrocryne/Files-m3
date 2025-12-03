@@ -292,6 +292,8 @@
 	<CornerRadius x:Key="MD3.Shape.CornerRadius.Full">999</CornerRadius>
 
 	<!--  Override default WinUI corner radius with Material Design 3 values  -->
+	<!--  Note: These global overrides affect all WinUI controls for a consistent MD3 look  -->
+	<!--  Component-specific styles can override these if needed  -->
 	<CornerRadius x:Key="ControlCornerRadius">{StaticResource MD3.Shape.CornerRadius.Medium}</CornerRadius>
 	<CornerRadius x:Key="OverlayCornerRadius">{StaticResource MD3.Shape.CornerRadius.Medium}</CornerRadius>
 	<CornerRadius x:Key="GridViewThumbnailCornerRadius">{StaticResource MD3.Shape.CornerRadius.Medium}</CornerRadius>

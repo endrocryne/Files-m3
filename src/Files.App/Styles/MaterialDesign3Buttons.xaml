@@ -1,6 +1,14 @@
 <!--  Copyright (c) Files Community. Licensed under the MIT License.  -->
 <ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 
+	<!--
+		Material Design 3 Button Styles
+		
+		Note: These implementations use opacity changes for hover/pressed states as a practical
+		adaptation for WinUI 3. Pure MD3 would use state layer overlays, but WinUI's visual
+		state system works more naturally with opacity changes. The visual effect is similar.
+	-->
+
 	<!--  Material Design 3 Filled Button Style  -->
 	<Style x:Key="MD3FilledButtonStyle" TargetType="Button">
 		<Setter Property="Background" Value="{ThemeResource MD3.PrimaryBrush}" />

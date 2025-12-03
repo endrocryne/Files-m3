@@ -1,0 +1,60 @@
+<!--  Copyright (c) Files Community. Licensed under the MIT License.  -->
+<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+	<!--  Material Design 3 TextBox Style  -->
+	<Style x:Key="MD3TextBoxStyle" TargetType="TextBox">
+		<Setter Property="Background" Value="{ThemeResource MD3.SurfaceVariantBrush}" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSurfaceBrush}" />
+		<Setter Property="BorderBrush" Value="{ThemeResource MD3.OutlineBrush}" />
+		<Setter Property="BorderThickness" Value="1" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Body.Large.Size}" />
+		<Setter Property="Padding" Value="16,8" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.ExtraSmall}" />
+	</Style>
+
+	<!--  Material Design 3 ComboBox Style  -->
+	<Style x:Key="MD3ComboBoxStyle" TargetType="ComboBox">
+		<Setter Property="Background" Value="{ThemeResource MD3.SurfaceVariantBrush}" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSurfaceBrush}" />
+		<Setter Property="BorderBrush" Value="{ThemeResource MD3.OutlineBrush}" />
+		<Setter Property="BorderThickness" Value="1" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Body.Large.Size}" />
+		<Setter Property="Padding" Value="16,8" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.ExtraSmall}" />
+	</Style>
+
+	<!--  Material Design 3 CheckBox Style  -->
+	<Style x:Key="MD3CheckBoxStyle" TargetType="CheckBox">
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSurfaceBrush}" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Body.Large.Size}" />
+	</Style>
+
+	<!--  Material Design 3 RadioButton Style  -->
+	<Style x:Key="MD3RadioButtonStyle" TargetType="RadioButton">
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSurfaceBrush}" />
+		<Setter Property="FontFamily" Value="{ThemeResource ContentControlThemeFontFamily}" />
+		<Setter Property="FontSize" Value="{StaticResource MD3.Typography.Body.Large.Size}" />
+	</Style>
+
+	<!--  Material Design 3 ListView Style  -->
+	<Style x:Key="MD3ListViewStyle" TargetType="ListView">
+		<Setter Property="Background" Value="{ThemeResource MD3.SurfaceBrush}" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSurfaceBrush}" />
+		<Setter Property="BorderBrush" Value="Transparent" />
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Medium}" />
+	</Style>
+
+	<!--  Material Design 3 GridView Style  -->
+	<Style x:Key="MD3GridViewStyle" TargetType="GridView">
+		<Setter Property="Background" Value="{ThemeResource MD3.SurfaceBrush}" />
+		<Setter Property="Foreground" Value="{ThemeResource MD3.OnSurfaceBrush}" />
+		<Setter Property="BorderBrush" Value="Transparent" />
+		<Setter Property="BorderThickness" Value="0" />
+		<Setter Property="CornerRadius" Value="{StaticResource MD3.Shape.CornerRadius.Medium}" />
+	</Style>
+
+</ResourceDictionary>
